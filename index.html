@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DigiSign</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="main">
+        <div class="top">
+            <div class="ColorBox">
+                <p>Text Color Picker</p>
+                <input type="color" class="ColorPicker" id="txtColorPicker" />
+            </div>
+            <div class="ColorBox">
+                <p>Background Color Picker</p>
+                <input type="Color" class="ColorPicker" id="bgColorPicker" />
+            </div>
+            <div class="ColorBox">
+                <p>Font Size</p>
+                <select id="fontSize" type="select" class="font-select">
+                    <option value="5">5px</option>
+                    <option value="10">10px</option>
+                    <option value="20">20px</option>
+                    <option value="30">30px</option>
+                    <option value="40">40px</option>
+                    <option value="50">50px</option>
+                </select>
+            </div>
+        </div>
+
+        <canvas class="signCanvas" id="signCanvas" width="800" height="500"></canvas>
+
+        <div class="bottom">
+            <button type="button" class="btn btn-cancel" id="clearButton">Clear Canvas</button>
+            <button type="button" class="btn btn-save" id="saveButton">Save & Download</button>
+            <button type="button" class="btn btn-retrieve" id="retrieveButton">Retrieve Saved Signature</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
