@@ -1,5 +1,3 @@
-prompt("Welcome to DigiSign");
-
 const txtColorPicker = document.getElementById("txtColorPicker");
 const bgColorPicker = document.getElementById("bgColorPicker");
 const signCanvas = document.getElementById("signCanvas");
