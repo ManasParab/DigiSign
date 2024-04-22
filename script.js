@@ -39,6 +39,18 @@ signCanvas.addEventListener("mouseup", (e) => {
   isDrawing = false;
 });
 
+signCanvas.addEventListener("touchstart", (e) => {
+  isDrawing = true;
+  lastX = e.touches[0].clientX;
+  lastY = e.touches[0].clientY;
+});
+
+signCanvas.addEventListener("touchmove", draw);
+
+signCanvas.addEventListener("touchend", () => {
+  isDrawing = false;
+});
+
 bgColorPicker.addEventListener("change", (e) => {
   ctx.fillStyle = e.target.value;
   ctx.fillRect(0, 0, 800, 500);
@@ -69,3 +81,4 @@ retrieveButton.addEventListener("click", () => {
     ctx.drawImage(img, 0, 0);
   }
 });
+
